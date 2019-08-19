@@ -81,8 +81,20 @@ console.log(Antonietta.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+Kennan.speak = function() {
+  return `Hello, my name is ${this.name}!`
+}
+
+console.log(Kennan.speak());
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+Antonietta.multiplyNums = function(num1, num2) {
+  return num1 * num2;
+}
+
+console.log(Antonietta.multiplyNums(3, 2));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
